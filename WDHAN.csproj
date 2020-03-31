@@ -9,7 +9,7 @@
   <ItemGroup>
     <PackageReference Include="CS-Script.Core" Version="1.3.1" />
     <PackageReference Include="Fluid.Core" Version="1.0.0-beta-9637" />
-    <PackageReference Include="Markdig" Version="0.18.0" />
+    <PackageReference Include="Markdig" Version="0.18.3" />
     <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
     <PackageReference Include="SharpScss" Version="1.4.0" />
     <PackageReference Include="YamlDotNet" Version="8.1.0" />
