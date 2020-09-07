@@ -24,7 +24,7 @@
     <ProjectReference Include="./Core/pigmeat.core.csproj" />
     <ProjectReference Include="./Core/Plugins/pigmeat.core.plugins.csproj" />
     <PackageReference Include="LibGit2Sharp" Version="0.26.2" />
-    <PackageReference Include="CS-Script.Core" Version="1.3.2" />
+    <PackageReference Include="CS-Script.Core" Version="1.4.0" />
     <PackageReference Include="Packaging.Targets" Version="0.1.171" />
     <PackageReference Include="SharpScss" Version="2.0.0" />
     <None Include="./branding/Yellow/128x128.png" Pack="true" PackagePath="" />
