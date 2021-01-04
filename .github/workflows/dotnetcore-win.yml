@@ -17,7 +17,7 @@ jobs:
       run: |
         dotnet publish -r win-x64 -c Release
     - name: Upload artifact
-      uses: actions/upload-artifact@v2.2.1
+      uses: actions/upload-artifact@v2.2.2
       with:
         # Artifact name
         name: pigmeat.win

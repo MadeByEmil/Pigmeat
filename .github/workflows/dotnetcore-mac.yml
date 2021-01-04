@@ -20,7 +20,7 @@ jobs:
         strip ./bin/Release/netcoreapp3.1/osx-x64/native/pigmeat
         tar -cvf pigmeat.tar ./bin/Release/netcoreapp3.1/osx-x64/native/pigmeat
     - name: Upload artifact
-      uses: actions/upload-artifact@v2.2.1
+      uses: actions/upload-artifact@v2.2.2
       with:
         # Artifact name
         name: pigmeat.mac
