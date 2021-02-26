@@ -1,19 +1,20 @@
 digraph "Pigmeat.Core.IO.CleanCollections"
 {
+ // LATEX_PDF_SIZE
   edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
   node [fontname="Helvetica",fontsize="10",shape=record];
-  rankdir="LR";
-  Node11 [label="Pigmeat.Core.IO.CleanCollections",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
-  Node11 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node12 [label="Pigmeat.Program.Build",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pigmeat_1_1_program.html#a878beaee804aea5645618e59b1a6d250",tooltip="The standard Pigmeat build process "];
-  Node12 -> Node13 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node13 [label="Pigmeat.Program.GetCommand",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pigmeat_1_1_program.html#a813269f3c9466bddfa561c72eb56de4f",tooltip="Perform actions specified by command calls "];
-  Node13 -> Node14 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node14 [label="Pigmeat.Program.Main",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pigmeat_1_1_program.html#a3b898a93d66f23079be04ac657013df3",tooltip="Handle primary tool information, such as command inputs and current directory "];
-  Node12 -> Node15 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node15 [label="Pigmeat.Program.ServeWatch",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pigmeat_1_1_program.html#a7fbef86d893429923099420b3748b826",tooltip="Watch the file system for changes (initial component of the serve command) "];
-  Node15 -> Node13 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node11 -> Node16 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node16 [label="Pigmeat.Program.Clean",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pigmeat_1_1_program.html#aee7bf660974463ceba948a73238f6cbc",tooltip="Clean the Pigmeat output directory "];
-  Node16 -> Node13 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  rankdir="RL";
+  Node1 [label="Pigmeat.Core.IO.CleanCollections",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Clean out the entries field in every collection.json file"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Pigmeat.Program.Build",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pigmeat_1_1_program.html#a878beaee804aea5645618e59b1a6d250",tooltip="The standard Pigmeat build process"];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="Pigmeat.Program.GetCommand",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pigmeat_1_1_program.html#a813269f3c9466bddfa561c72eb56de4f",tooltip="Perform actions specified by command calls"];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="Pigmeat.Program.Main",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pigmeat_1_1_program.html#a3b898a93d66f23079be04ac657013df3",tooltip="Handle primary tool information, such as command inputs and current directory"];
+  Node2 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="Pigmeat.Program.ServeWatch",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pigmeat_1_1_program.html#a7fbef86d893429923099420b3748b826",tooltip="Watch the file system for changes (initial component of the serve command)"];
+  Node5 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="Pigmeat.Program.Clean",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pigmeat_1_1_program.html#aee7bf660974463ceba948a73238f6cbc",tooltip="Clean the Pigmeat output directory"];
+  Node6 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
 }

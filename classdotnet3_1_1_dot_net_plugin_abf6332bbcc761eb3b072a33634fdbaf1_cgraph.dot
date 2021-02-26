@@ -1,16 +1,17 @@
 digraph "dotnet3.DotNetPlugin._get_sdk"
 {
+ // LATEX_PDF_SIZE
   edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
   node [fontname="Helvetica",fontsize="10",shape=record];
   rankdir="LR";
-  Node16 [label="dotnet3.DotNetPlugin.\l_get_sdk",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
-  Node16 -> Node17 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node17 [label="dotnet3.DotNetPlugin.\l_get_sdk_info",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classdotnet3_1_1_dot_net_plugin.html#ac23a832e28d57ef05998c9d1900179a5"];
-  Node17 -> Node18 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node18 [label="dotnet3.DotNetPlugin.\l_get_channel_metadata",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classdotnet3_1_1_dot_net_plugin.html#aca78525d202ce3cbe91cc807649ef60f"];
-  Node18 -> Node19 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node19 [label="dotnet3.DotNetPlugin.\l_get_dotnet_release_metadata",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classdotnet3_1_1_dot_net_plugin.html#a684c8f64a9a756674c1e964cbab43f2e"];
-  Node17 -> Node20 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node20 [label="dotnet3.DotNetPlugin.\l_get_version_metadata",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classdotnet3_1_1_dot_net_plugin.html#aae35d5b42043c15622ccfd70d851b3f4"];
-  Node20 -> Node19 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 [label="dotnet3.DotNetPlugin.\l_get_sdk",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="dotnet3.DotNetPlugin.\l_get_sdk_info",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classdotnet3_1_1_dot_net_plugin.html#ac23a832e28d57ef05998c9d1900179a5",tooltip=" "];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="dotnet3.DotNetPlugin.\l_get_channel_metadata",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classdotnet3_1_1_dot_net_plugin.html#aca78525d202ce3cbe91cc807649ef60f",tooltip=" "];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="dotnet3.DotNetPlugin.\l_get_dotnet_release_metadata",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classdotnet3_1_1_dot_net_plugin.html#a684c8f64a9a756674c1e964cbab43f2e",tooltip=" "];
+  Node2 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="dotnet3.DotNetPlugin.\l_get_version_metadata",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classdotnet3_1_1_dot_net_plugin.html#aae35d5b42043c15622ccfd70d851b3f4",tooltip=" "];
+  Node5 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
 }

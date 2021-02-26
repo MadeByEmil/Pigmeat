@@ -1,13 +1,14 @@
 digraph "Pigmeat.Program.Help"
 {
+ // LATEX_PDF_SIZE
   edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
   node [fontname="Helvetica",fontsize="10",shape=record];
   rankdir="LR";
-  Node59 [label="Pigmeat.Program.Help",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
-  Node59 -> Node60 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node60 [label="Pigmeat.Program.About",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pigmeat_1_1_program.html#a9a8bd00e69ab494615e073f050ba2344",tooltip="Show authorship and license information regarding Pigmeat "];
-  Node59 -> Node61 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node61 [label="Pigmeat.Program.Warranty",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pigmeat_1_1_program.html#a1dcbceceda4d4e696d8dbd07aa1bb036",tooltip="Output the warranty disclaimer per the GPL 3.0 license "];
-  Node59 -> Node62 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node62 [label="Pigmeat.Program.Terms",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pigmeat_1_1_program.html#a8ef23dc63330befdb247d0ceac11f600",tooltip="Output the terms and conditions of the GPL 3.0 license "];
+  Node1 [label="Pigmeat.Program.Help",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Show how to use the Pigmeat tool"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Pigmeat.Program.About",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pigmeat_1_1_program.html#a9a8bd00e69ab494615e073f050ba2344",tooltip="Show authorship and license information regarding Pigmeat"];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="Pigmeat.Program.Terms",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pigmeat_1_1_program.html#a8ef23dc63330befdb247d0ceac11f600",tooltip="Output the terms and conditions of the GPL 3.0 license"];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="Pigmeat.Program.Warranty",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pigmeat_1_1_program.html#a1dcbceceda4d4e696d8dbd07aa1bb036",tooltip="Output the warranty disclaimer per the GPL 3.0 license"];
 }

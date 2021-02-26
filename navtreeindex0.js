@@ -85,7 +85,7 @@ var NAVTREEINDEX0 =
 "class_pigmeat_1_1_program.html#ab4819678210df941c6a5abc0b2e0b46f":[6,0,1,1,11],
 "class_pigmeat_1_1_program.html#aee7bf660974463ceba948a73238f6cbc":[6,0,1,1,2],
 "classdotnet3_1_1_dot_net_bad_architecture_error.html":[6,0,0,0],
-"classdotnet3_1_1_dot_net_bad_architecture_error.html#a760a8ab80e6d524ddf0e11e2237ccb0f":[6,0,0,0,0],
+"classdotnet3_1_1_dot_net_bad_architecture_error.html#a3a921adfa0e5cd116413c8182f2ff97a":[6,0,0,0,0],
 "classdotnet3_1_1_dot_net_bad_architecture_error.html#a7abfd57882315631ddff4c47f683efc1":[6,0,0,0,1],
 "classdotnet3_1_1_dot_net_bad_release_data_error.html":[6,0,0,1],
 "classdotnet3_1_1_dot_net_bad_release_data_error.html#a8f0ab3f4b47847817f66148ba8548ddd":[6,0,0,1,0],
