@@ -1,22 +1,22 @@
-name: pigmeat
+name: wdhan
 version: 2.2.0
 summary: A static content publishing tool for the modern web.
 description: |
-  Pigmeat is a static content publishing tool for the modern web. It takes data in the form of JSON or YAML, plugs it into a Liquid context, wraps it up in some HTML & CSS, and spits out a website that can be hosted online. If you don't know what any of that means, it's OK. Point is, it's an easier way to publish on the internet, regardless of your skill level. Pigmeat is for corporations, organizations, friends, peers, bloggers, hobbyists, and everyone under the sun.
+  WDHAN is a static content publishing tool for the modern web. It takes data in the form of JSON or YAML, plugs it into a Liquid context, wraps it up in some HTML & CSS, and spits out a website that can be hosted online. If you don't know what any of that means, it's OK. Point is, it's an easier way to publish on the internet, regardless of your skill level. WDHAN is for corporations, organizations, friends, peers, bloggers, hobbyists, and everyone under the sun.
 confinement: strict
 base: core18
 grade: stable
 license: GPL-3.0
-icon: branding/Yellow/android-chrome-512x512.png
+icon: branding/android-chrome-512x512.png
 
 parts:
-  pigmeat:
+  wdhan:
     plugin: dotnet3
     source: .
 
 apps:
-  pigmeat:
-    command: pigmeat
+  wdhan:
+    command: wdhan
     plugs:
       - process-control
       - home

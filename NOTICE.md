@@ -1,6 +1,6 @@
-# 3rd-Party Software for [Pigmeat](https://github.com/MadeByEmil/Pigmeat)
+# 3rd-Party Software for [WDHAN](https://github.com/MadeByEmil/WDHAN)
 
-The following 3rd-party software packages may be used by or distributed with **Pigmeat**.
+The following 3rd-party software packages may be used by or distributed with **WDHAN**.
 
 
 

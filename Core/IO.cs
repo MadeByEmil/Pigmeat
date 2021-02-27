@@ -1,19 +1,19 @@
 // Copyright (C) 2020 Emil Sayahi
 /*
-This file is part of Pigmeat.
+This file is part of WDHAN.
 
-    Pigmeat is free software: you can redistribute it and/or modify
+    WDHAN is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
     the Free Software Foundation, either version 3 of the License, or
     (at your option) any later version.
 
-    Pigmeat is distributed in the hope that it will be useful,
+    WDHAN is distributed in the hope that it will be useful,
     but WITHOUT ANY WARRANTY; without even the implied warranty of
     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
     GNU General Public License for more details.
 
     You should have received a copy of the GNU General Public License
-    along with Pigmeat.  If not, see <https://www.gnu.org/licenses/>.
+    along with WDHAN.  If not, see <https://www.gnu.org/licenses/>.
 */
 using System;
 using System.Collections.Generic;
@@ -28,15 +28,15 @@ using Scriban;
 using YamlDotNet.Serialization;
 using Scriban.Runtime;
 
-namespace Pigmeat.Core
+namespace WDHAN.Core
 {
     /// <summary>
     /// The <c>IO</c> class.
-    /// Contains all methods related to handling Pigmeat's build process.
+    /// Contains all methods related to handling WDHAN's build process.
     /// </summary>
     public static class IO
     {
-        /// <value>Pigmeat's current version number</value>
+        /// <value>WDHAN's current version number</value>
         static string Release = typeof(IO).GetTypeInfo().Assembly.GetCustomAttribute<AssemblyInformationalVersionAttribute>().InformationalVersion;
         /// <value>Cached layout data to be used during building</value>
         private static SortedDictionary<string, string> layouts = new SortedDictionary<string, string>();
@@ -45,9 +45,9 @@ namespace Pigmeat.Core
         {
             get { return layouts; } set { layouts = value; }
         }
-        /// <value>Whether or not Pigmeat is currently serving</value>
+        /// <value>Whether or not WDHAN is currently serving</value>
         private static bool serving = false; // If tool is building multiple times, then we know it's serving
-        /// <value>Whether or not Pigmeat is currently serving</value>
+        /// <value>Whether or not WDHAN is currently serving</value>
         public static bool Serving
         {
             get { return serving; } set { serving = value; }
@@ -152,15 +152,15 @@ namespace Pigmeat.Core
         }
 
         /// <summary>
-        /// Get <c>JObject</c> representing project's <c>Pigmeat</c> context
+        /// Get <c>JObject</c> representing project's <c>WDHAN</c> context
         /// <para>See <see cref="IO.RenderPage(JObject, string, bool, bool, JObject)"/></para>
         /// <seealso cref="Page.GetPermalink(JObject, JObject)"/>
         /// <seealso cref="Snippet.Render(string, JObject)"/>
         /// </summary>
         /// <returns>
-        /// JSON representation of Pigmeat's internal Liquid context
+        /// JSON representation of WDHAN's internal Liquid context
         /// </returns>
-        public static JObject GetPigmeat()
+        public static JObject GetWDHAN()
         {
             return JObject.Parse(JsonConvert.SerializeObject(new { version = Release, time = DateTime.UtcNow.ToString("yyyy-MM-dd HH:mm:ss") }));
         }
@@ -278,7 +278,7 @@ namespace Pigmeat.Core
 
             // Render with Scriban
             var template = Template.ParseLiquid(PageContents);
-            PageContents = template.Render(new { page = ConvertFromJson(PageObject), collection = ConvertFromJson(CollectionObject), global = ConvertFromJson(Global), pigmeat = ConvertFromJson(GetPigmeat()), paginator = ConvertFromJson(PaginatorObject) });
+            PageContents = template.Render(new { page = ConvertFromJson(PageObject), collection = ConvertFromJson(CollectionObject), global = ConvertFromJson(Global), wdhan = ConvertFromJson(GetWDHAN()), paginator = ConvertFromJson(PaginatorObject) });
             PageContents = Snippet.Parse(PageContents, PageObject); // Parse for snippets
 
             if(!string.IsNullOrEmpty(Collection))

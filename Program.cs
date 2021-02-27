@@ -1,33 +1,33 @@
 ﻿// Copyright (C) 2020 Emil Sayahi
 /*
-This file is part of Pigmeat.
+This file is part of WDHAN.
 
-    Pigmeat is free software: you can redistribute it and/or modify
+    WDHAN is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
     the Free Software Foundation, either version 3 of the License, or
     (at your option) any later version.
 
-    Pigmeat is distributed in the hope that it will be useful,
+    WDHAN is distributed in the hope that it will be useful,
     but WITHOUT ANY WARRANTY; without even the implied warranty of
     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
     GNU General Public License for more details.
 
     You should have received a copy of the GNU General Public License
-    along with Pigmeat.  If not, see <https://www.gnu.org/licenses/>.
+    along with WDHAN.  If not, see <https://www.gnu.org/licenses/>.
 */
 using System;
 using System.IO;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
-using Pigmeat.Core;
+using WDHAN.Core;
 using SharpScss;
 
-namespace Pigmeat
+namespace WDHAN
 {
     /// <summary>
     /// The <c>Program</c> class.
-    /// Connects user inputs via command calls to the <c>Pigmeat.Core</c> library.
-    /// The vanilla Pigmeat tool and standard implementation.
+    /// Connects user inputs via command calls to the <c>WDHAN.Core</c> library.
+    /// The vanilla WDHAN tool and standard implementation.
     /// </summary>
     static class Program
     {
@@ -86,7 +86,7 @@ namespace Pigmeat
             switch (args.Length)
             {
                 case 0:
-                    Console.WriteLine("Pigmeat  Copyright (C) 2020  Emil Sayahi\n    This program comes with ABSOLUTELY NO WARRANTY; for details type `pigmeat w'.\n    This is free software, and you are welcome to redistribute it\n    under certain conditions; type `pigmeat t' for details.\n");
+                    Console.WriteLine("WDHAN  Copyright (C) 2020  Emil Sayahi\n    This program comes with ABSOLUTELY NO WARRANTY; for details type `wdhan w'.\n    This is free software, and you are welcome to redistribute it\n    under certain conditions; type `wdhan t' for details.\n");
                     Help(args);
                     break;
                 default:
@@ -150,7 +150,7 @@ namespace Pigmeat
         }
 
         /// <summary>
-        /// Show authorship and license information regarding Pigmeat
+        /// Show authorship and license information regarding WDHAN
         /// <para> See <see cref="GetCommand(string[])"/> </para>
         /// </summary>
         static void About()
@@ -159,7 +159,7 @@ namespace Pigmeat
         }
 
         /// <summary>
-        /// The standard Pigmeat build process
+        /// The standard WDHAN build process
         /// <para> See <see cref="GetCommand(string[])"/> </para>
         /// <seealso cref="ServeWatch"/>
         /// </summary>
@@ -265,7 +265,7 @@ namespace Pigmeat
         }
 
         /// <summary>
-        /// Create a barebones Pigmeat project
+        /// Create a barebones WDHAN project
         /// <para> See <see cref="GetCommand(string[])"/> </para>
         /// </summary>
         static void New()
@@ -280,7 +280,7 @@ namespace Pigmeat
 
             File.WriteAllText("./_posts/collection.json", "{\n\t\"name\": \"posts\",\n\t\"entries\": []\n}");
             File.WriteAllText("./_posts/README.md", "---\r\ntitle: \"A post\"\r\npermalink: \"index.html\"\r\n---\r\nThis is a post, generated from `README.md` in the `posts` folder.");
-            File.WriteAllText("./_global.yml", "title: Pigmeat Project\nculture: \"en-US\"\nincluded-files: []\nincluded-pages: []");
+            File.WriteAllText("./_global.yml", "title: WDHAN Project\nculture: \"en-US\"\nincluded-files: []\nincluded-pages: []");
             File.WriteAllText("./drafts/README", "This is where your Markdown and HTML documents should go if you don't want them to be published.");
             File.WriteAllText("./layouts/README", "This is where your HTML page templates go.");
             File.WriteAllText("./snippets/README", "This is where your HTML snippets go.");
@@ -290,7 +290,7 @@ namespace Pigmeat
         }
 
         /// <summary>
-        /// Clean the Pigmeat <c>output</c> directory
+        /// Clean the WDHAN <c>output</c> directory
         /// <para> See <see cref="GetCommand(string[])"/> </para>
         /// </summary>
         static void Clean()
@@ -338,7 +338,7 @@ namespace Pigmeat
             var RelativePath = Path.GetRelativePath("./", e.FullPath); // Relative paths are nicer to work with
             /*
             Filter out the following situations:
-                1. Changes by Pigmeat iself
+                1. Changes by WDHAN iself
                 2. Changes recorded by git
                 3. Changes to directories (no purpose in doing anything when this occurs)
                 4. Changes made mere milliseconds apart
@@ -450,7 +450,7 @@ namespace Pigmeat
         }
 
         /// <summary>
-        /// Show how to use the Pigmeat tool
+        /// Show how to use the WDHAN tool
         /// <para> See <see cref="GetCommand(string[])"/> </para>
         /// </summary>
         static void Help(string[] args)
@@ -458,27 +458,27 @@ namespace Pigmeat
             if(args.Length <= 1)
             {
                 Console.WriteLine(
-                    "Pigmeat has the following commands:\n" +
-                    "    pigmeat new <path:optional> - Creates an empty Pigmeat project.\n" +
-                    "    pigmeat build <path:optional> - Outputs a publishable Pigmeat project.\n" +
-                    "    pigmeat serve <path:optional> - Continuously rebuilds a Pigmeat project when file changes are made.\n" +
-                    "    pigmeat clean <path:optional> - Deletes all generated data that results from the build process.\n" +
-                    "    pigmeat help <command:optional> - Displays an informational message regarding the usage of Pigmeat."
+                    "WDHAN has the following commands:\n" +
+                    "    wdhan new <path:optional> - Creates an empty WDHAN project.\n" +
+                    "    wdhan build <path:optional> - Outputs a publishable WDHAN project.\n" +
+                    "    wdhan serve <path:optional> - Continuously rebuilds a WDHAN project when file changes are made.\n" +
+                    "    wdhan clean <path:optional> - Deletes all generated data that results from the build process.\n" +
+                    "    wdhan help <command:optional> - Displays an informational message regarding the usage of WDHAN."
                     );
                 Environment.Exit(0);
             }
             switch (args[1]) {
                 case "new":
                 case "n":
-                    Console.WriteLine("Creates an empty Pigmeat project. A path may be specified, otherwise a project will be created where Pigmeat is running.");
+                    Console.WriteLine("Creates an empty WDHAN project. A path may be specified, otherwise a project will be created where WDHAN is running.");
                     break;
                 case "build":
                 case "b":
-                    Console.WriteLine("Outputs a publishable Pigmeat project. A path may be specified, otherwise a project will be built where Pigmeat is running.");
+                    Console.WriteLine("Outputs a publishable WDHAN project. A path may be specified, otherwise a project will be built where WDHAN is running.");
                     break;
                 case "serve":
                 case "s":
-                    Console.WriteLine("Continuously rebuilds a Pigmeat project when file changes are made. Intended for previewing changes during development.");
+                    Console.WriteLine("Continuously rebuilds a WDHAN project when file changes are made. Intended for previewing changes during development.");
                     break;
                 case "clean":
                 case "c":
@@ -486,7 +486,7 @@ namespace Pigmeat
                     break;
                 case "help":
                 case "h":
-                    Console.WriteLine("Prints a message outlining Pigmeat's commands. A subparameter may be specified, displaying a message outlining the usage of the given parameter (e.g. 'pigmeat help serve').");
+                    Console.WriteLine("Prints a message outlining WDHAN's commands. A subparameter may be specified, displaying a message outlining the usage of the given parameter (e.g. 'wdhan help serve').");
                     break;
                 case "about":
                     About();
@@ -500,7 +500,7 @@ namespace Pigmeat
                     Terms();
                     break;
                 default:
-                    Console.WriteLine("Please specify a parameter (e.g. 'pigmeat help new,' 'pigmeat help build,' 'pigmeat help serve,' 'pigmeat help clean').");
+                    Console.WriteLine("Please specify a parameter (e.g. 'wdhan help new,' 'wdhan help build,' 'wdhan help serve,' 'wdhan help clean').");
                     break;
             }
         }

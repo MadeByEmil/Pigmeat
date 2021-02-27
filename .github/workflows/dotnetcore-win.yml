@@ -20,6 +20,6 @@ jobs:
       uses: actions/upload-artifact@v2.2.2
       with:
         # Artifact name
-        name: pigmeat.win
+        name: wdhan.win
         # Directory containing files to upload
-        path: ./bin/Release/netcoreapp3.1/win-x64/native/pigmeat.exe
+        path: ./bin/Release/netcoreapp3.1/win-x64/native/wdhan.exe

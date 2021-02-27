@@ -4,7 +4,7 @@ using System.IO;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 
-namespace Pigmeat.Core
+namespace WDHAN.Core
 {
     /// <summary>
     /// The <c>Paginator</c> class.

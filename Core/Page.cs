@@ -1,19 +1,19 @@
 // Copyright (C) 2020 Emil Sayahi
 /*
-This file is part of Pigmeat.
+This file is part of WDHAN.
 
-    Pigmeat is free software: you can redistribute it and/or modify
+    WDHAN is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
     the Free Software Foundation, either version 3 of the License, or
     (at your option) any later version.
 
-    Pigmeat is distributed in the hope that it will be useful,
+    WDHAN is distributed in the hope that it will be useful,
     but WITHOUT ANY WARRANTY; without even the implied warranty of
     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
     GNU General Public License for more details.
 
     You should have received a copy of the GNU General Public License
-    along with Pigmeat.  If not, see <https://www.gnu.org/licenses/>.
+    along with WDHAN.  If not, see <https://www.gnu.org/licenses/>.
 */
 using System;
 using System.Globalization;
@@ -23,7 +23,7 @@ using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using Scriban;
 
-namespace Pigmeat.Core
+namespace WDHAN.Core
 {
     /// <summary>
     /// The <c>Page</c> class.
@@ -223,7 +223,7 @@ namespace Pigmeat.Core
                     break;
             }
             var template = Template.ParseLiquid(Permalink);
-            return template.Render(new { page = PageObject, global = IO.GetGlobal(), pigmeat = IO.GetPigmeat(), paginator = PaginatorObject });
+            return template.Render(new { page = PageObject, global = IO.GetGlobal(), wdhan = IO.GetWDHAN(), paginator = PaginatorObject });
         }
         static string GetDayOfYear(DateTime Date, CultureInfo Culture)
         {

@@ -17,11 +17,11 @@ jobs:
       run: |
         sudo apt install libkrb5-dev -y
         dotnet publish -r linux-x64 -c Release
-        chmod +x ./bin/Release/netcoreapp3.1/linux-x64/native/pigmeat
-        strip --strip-all ./bin/Release/netcoreapp3.1/linux-x64/native/pigmeat
-        tar -cvf pigmeat.tar ./bin/Release/netcoreapp3.1/linux-x64/native/pigmeat
+        chmod +x ./bin/Release/netcoreapp3.1/linux-x64/native/wdhan
+        strip --strip-all ./bin/Release/netcoreapp3.1/linux-x64/native/wdhan
+        tar -cvf wdhan.tar ./bin/Release/netcoreapp3.1/linux-x64/native/wdhan
     - name: Upload artifact
       uses: actions/upload-artifact@v2
       with:
-        name: pigmeat
-        path: ./pigmeat.tar
+        name: wdhan
+        path: ./wdhan.tar

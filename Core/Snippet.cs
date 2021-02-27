@@ -1,19 +1,19 @@
 // Copyright (C) 2020 Emil Sayahi
 /*
-This file is part of Pigmeat.
+This file is part of WDHAN.
 
-    Pigmeat is free software: you can redistribute it and/or modify
+    WDHAN is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
     the Free Software Foundation, either version 3 of the License, or
     (at your option) any later version.
 
-    Pigmeat is distributed in the hope that it will be useful,
+    WDHAN is distributed in the hope that it will be useful,
     but WITHOUT ANY WARRANTY; without even the implied warranty of
     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
     GNU General Public License for more details.
 
     You should have received a copy of the GNU General Public License
-    along with Pigmeat.  If not, see <https://www.gnu.org/licenses/>.
+    along with WDHAN.  If not, see <https://www.gnu.org/licenses/>.
 */
 using System.Collections.Generic;
 using System.IO;
@@ -25,7 +25,7 @@ using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using Scriban;
 
-namespace Pigmeat.Core
+namespace WDHAN.Core
 {
     /// <summary>
     /// The <c>Snippet</c> class.
@@ -124,7 +124,7 @@ namespace Pigmeat.Core
                 SnippetObject = JObject.Parse(JsonConvert.SerializeObject(Variables, Formatting.None));
             }
             var template = Template.ParseLiquid(File.ReadAllText(SnippetPath));
-            var SnippetContents = template.Render(new { snippet = IO.ConvertFromJson(SnippetObject), page = IO.ConvertFromJson(PageObject), collection = IO.ConvertFromJson(CollectionObject), global = IO.ConvertFromJson(Global), pigmeat = IO.ConvertFromJson(IO.GetPigmeat()) });
+            var SnippetContents = template.Render(new { snippet = IO.ConvertFromJson(SnippetObject), page = IO.ConvertFromJson(PageObject), collection = IO.ConvertFromJson(CollectionObject), global = IO.ConvertFromJson(Global), wdhan = IO.ConvertFromJson(IO.GetWDHAN()) });
             SnippetContents = Snippet.Parse(SnippetContents, PageObject); // Parse for snippets
             return SnippetContents;
         }

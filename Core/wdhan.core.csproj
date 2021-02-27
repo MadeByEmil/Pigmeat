@@ -4,16 +4,16 @@
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <PackageIcon>128x128.png</PackageIcon>
-    <ApplicationIcon>../branding/Yellow/Pigmeat Yellow Square.ico</ApplicationIcon>
-    <PackageId>Pigmeat.Core</PackageId>
+    <ApplicationIcon>../branding/logo.ico</ApplicationIcon>
+    <PackageId>WDHAN.Core</PackageId>
     <Version>2.2.0</Version>
     <Authors>Emil Sayahi</Authors>
-    <Product>Pigmeat.Core</Product>
+    <Product>WDHAN.Core</Product>
     <PackageLicenseExpression>GPL-3.0-only</PackageLicenseExpression>
     <Description>A static content publishing library for the modern web.</Description>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
-    <RepositoryUrl>https://github.com/MadeByEmil/Pigmeat</RepositoryUrl>
+    <RepositoryUrl>https://github.com/MadeByEmil/WDHAN</RepositoryUrl>
     <PackageOutputPath>../nupkg</PackageOutputPath>
     <SelfContained>false</SelfContained>
     <OutputType>Library</OutputType>
@@ -25,7 +25,6 @@
     <PackageReference Include="Scriban" Version="3.5.0" />
     <PackageReference Include="SharpScss" Version="2.0.0" />
     <PackageReference Include="YamlDotNet" Version="9.1.4" />
-    <None Include="../branding/Yellow/128x128.png" Pack="true" PackagePath="" />
     <None Include="../COPYING" Pack="true" PackagePath="" />
     <None Include="../NOTICE.md" Pack="true" PackagePath="" />
   </ItemGroup>

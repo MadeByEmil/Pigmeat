@@ -16,13 +16,13 @@ jobs:
     - name: Build with dotnet
       run: |
         dotnet publish -r osx-x64 -c Release
-        chmod +x ./bin/Release/netcoreapp3.1/osx-x64/native/pigmeat
-        strip ./bin/Release/netcoreapp3.1/osx-x64/native/pigmeat
-        tar -cvf pigmeat.tar ./bin/Release/netcoreapp3.1/osx-x64/native/pigmeat
+        chmod +x ./bin/Release/netcoreapp3.1/osx-x64/native/wdhan
+        strip ./bin/Release/netcoreapp3.1/osx-x64/native/wdhan
+        tar -cvf wdhan.tar ./bin/Release/netcoreapp3.1/osx-x64/native/wdhan
     - name: Upload artifact
       uses: actions/upload-artifact@v2.2.2
       with:
         # Artifact name
-        name: pigmeat.mac
+        name: wdhan.mac
         # Directory containing files to upload
-        path: ./pigmeat.tar
+        path: ./wdhan.tar

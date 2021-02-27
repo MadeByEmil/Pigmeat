@@ -21,10 +21,10 @@ jobs:
         uses: rohith/publish-nuget@v2
         with:
           # Filepath of the project to be packaged, relative to root of repository
-          PROJECT_FILE_PATH: pigmeat.csproj
+          PROJECT_FILE_PATH: wdhan.csproj
           
           # NuGet package id, used for version detection & defaults to project name
-          PACKAGE_NAME: Pigmeat
+          PACKAGE_NAME: WDHAN
           
           # Filepath with version info, relative to root of repository & defaults to PROJECT_FILE_PATH
           # VERSION_FILE_PATH: Directory.Build.props
@@ -56,10 +56,10 @@ jobs:
         uses: rohith/publish-nuget@v2
         with:
           # Filepath of the project to be packaged, relative to root of repository
-          PROJECT_FILE_PATH: ./Core/pigmeat.core.csproj
+          PROJECT_FILE_PATH: ./Core/wdhan.core.csproj
           
           # NuGet package id, used for version detection & defaults to project name
-          PACKAGE_NAME: Pigmeat.Core
+          PACKAGE_NAME: WDHAN.Core
           
           # Filepath with version info, relative to root of repository & defaults to PROJECT_FILE_PATH
           # VERSION_FILE_PATH: Directory.Build.props

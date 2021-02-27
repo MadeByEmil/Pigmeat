@@ -4,17 +4,17 @@
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <PackageIcon>128x128.png</PackageIcon>
-    <ApplicationIcon>branding/Yellow/Pigmeat Yellow Square.ico</ApplicationIcon>
-    <PackageId>Pigmeat</PackageId>
+    <ApplicationIcon>branding/logo.ico</ApplicationIcon>
+    <PackageId>WDHAN</PackageId>
     <Version>2.2.0</Version>
     <Authors>Emil Sayahi</Authors>
-    <Product>Pigmeat</Product>
+    <Product>WDHAN</Product>
     <PackageLicenseExpression>GPL-3.0-only</PackageLicenseExpression>
     <Description>A static content publishing tool for the modern web.</Description>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
-    <RepositoryUrl>https://github.com/MadeByEmil/Pigmeat</RepositoryUrl>
+    <RepositoryUrl>https://github.com/MadeByEmil/WDHAN</RepositoryUrl>
     <PackAsTool>true</PackAsTool>
-    <ToolCommandName>pigmeat</ToolCommandName>
+    <ToolCommandName>wdhan</ToolCommandName>
     <PackageOutputPath>./nupkg</PackageOutputPath>
     <DefaultItemExcludes>$(DefaultItemExcludes);Core\**</DefaultItemExcludes>
     <IlcOptimizationPreference>Speed</IlcOptimizationPreference>
@@ -27,10 +27,9 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.DotNet.ILCompiler" Version="1.0.0-alpha-*" />
-    <ProjectReference Include="./Core/pigmeat.core.csproj" />
+    <ProjectReference Include="./Core/wdhan.core.csproj" />
     <PackageReference Include="Packaging.Targets" Version="0.1.189" />
     <PackageReference Include="SharpScss" Version="2.0.0" />
-    <None Include="./branding/Yellow/128x128.png" Pack="true" PackagePath="" />
     <None Include="COPYING" Pack="true" PackagePath="" />
     <None Include="NOTICE.md" Pack="true" PackagePath="" />
   </ItemGroup>
