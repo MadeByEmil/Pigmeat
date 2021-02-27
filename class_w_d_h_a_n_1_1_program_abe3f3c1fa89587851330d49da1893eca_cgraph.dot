@@ -1,0 +1,14 @@
+digraph "WDHAN.Program.Help"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="WDHAN.Program.Help",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Show how to use the WDHAN tool"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="WDHAN.Program.About",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_w_d_h_a_n_1_1_program.html#a8b241ed2da11c93a3251909b15bd5211",tooltip="Show authorship and license information regarding WDHAN"];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="WDHAN.Program.Terms",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_w_d_h_a_n_1_1_program.html#a9a6039a96450316183c19db7d86be84e",tooltip="Output the terms and conditions of the GPL 3.0 license"];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="WDHAN.Program.Warranty",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_w_d_h_a_n_1_1_program.html#a353c0990d3faef2bde44141e7e702ff8",tooltip="Output the warranty disclaimer per the GPL 3.0 license"];
+}

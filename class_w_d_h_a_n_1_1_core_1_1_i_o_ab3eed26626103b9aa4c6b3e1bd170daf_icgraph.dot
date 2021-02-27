@@ -1,0 +1,26 @@
+digraph "WDHAN.Core.IO.RenderPage"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="WDHAN.Core.IO.RenderPage",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Take layout, place Markdig-parsed content in layout, evaluate includes, render with Scriban"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="WDHAN.Core.Page.GetPageObject",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_w_d_h_a_n_1_1_core_1_1_page.html#a292f66b0e00db3129dd8db67c6235599",tooltip="Parses a given page into a JObject"];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="WDHAN.Program.Build",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_w_d_h_a_n_1_1_program.html#a39b3a643de124a4b93ba5428a47f2fd5",tooltip="The standard WDHAN build process"];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="WDHAN.Program.GetCommand",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_w_d_h_a_n_1_1_program.html#a606b7eaece0f2ec760d7f286220aacbf",tooltip="Perform actions specified by command calls"];
+  Node4 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="WDHAN.Program.Main",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_w_d_h_a_n_1_1_program.html#a14e480627de46617460535940f6ccd02",tooltip="Handle primary tool information, such as command inputs and current directory"];
+  Node3 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="WDHAN.Program.ServeWatch",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_w_d_h_a_n_1_1_program.html#a8f7df5ec0b455119b0a036e679fe3ac9",tooltip="Watch the file system for changes (initial component of the serve command)"];
+  Node6 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="WDHAN.Core.Paginator.Render\lPaginated",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_w_d_h_a_n_1_1_core_1_1_paginator.html#abd6c49a658ae78968a631cc0330e70a2",tooltip="Outputs a paginated version of a page (requires {{ page.paginate }} and {{ page.collection }})"];
+  Node7 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="WDHAN.Program.ServeBuild",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_w_d_h_a_n_1_1_program.html#a89a40868dfd12772997b75e186bfd075",tooltip="Rebuild changed files (final component of the serve command)"];
+  Node8 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

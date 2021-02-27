@@ -4,5 +4,5 @@ digraph "Graphical Class Hierarchy"
   edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
   node [fontname="Helvetica",fontsize="10",shape=record];
   rankdir="LR";
-  Node0 [label="Pigmeat.Program",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pigmeat_1_1_program.html",tooltip="The Program class. Connects user inputs via command calls to the Pigmeat.Core library...."];
+  Node0 [label="WDHAN.Program",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_w_d_h_a_n_1_1_program.html",tooltip="The Program class. Connects user inputs via command calls to the WDHAN.Core library...."];
 }

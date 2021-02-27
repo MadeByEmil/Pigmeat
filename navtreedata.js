@@ -22,11 +22,11 @@ for the JavaScript code in this file
 */
 var NAVTREE =
 [
-  [ "Pigmeat", "index.html", [
+  [ "WDHAN", "index.html", [
     [ "Contributor Covenant Code of Conduct", "md__home_runner_work__pigmeat__pigmeat__c_o_d_e__o_f__c_o_n_d_u_c_t.html", null ],
-    [ "How to contribute to Pigmeat", "md__home_runner_work__pigmeat__pigmeat__c_o_n_t_r_i_b_u_t_i_n_g.html", null ],
-    [ "3rd-Party Software for <a href=\"https://github.com/MadeByEmil/Pigmeat\">Pigmeat</a>", "md__home_runner_work__pigmeat__pigmeat__n_o_t_i_c_e.html", null ],
-    [ "Pigmeat", "md__home_runner_work__pigmeat__pigmeat__r_e_a_d_m_e.html", null ],
+    [ "How to contribute to WDHAN", "md__home_runner_work__pigmeat__pigmeat__c_o_n_t_r_i_b_u_t_i_n_g.html", null ],
+    [ "3rd-Party Software for <a href=\"https://github.com/MadeByEmil/WDHAN\">WDHAN</a>", "md__home_runner_work__pigmeat__pigmeat__n_o_t_i_c_e.html", null ],
+    [ "WDHAN", "md__home_runner_work__pigmeat__pigmeat__r_e_a_d_m_e.html", null ],
     [ "Security Policy", "md__home_runner_work__pigmeat__pigmeat__s_e_c_u_r_i_t_y.html", null ],
     [ "Packages", "namespaces.html", [
       [ "Packages", "namespaces.html", "namespaces_dup" ],

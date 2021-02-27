@@ -1,0 +1,53 @@
+digraph "WDHAN.Core.Paginator.RenderPaginated"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="WDHAN.Core.Paginator.Render\lPaginated",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Outputs a paginated version of a page (requires {{ page.paginate }} and {{ page.collection }})"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="WDHAN.Core.Page.GetPageObject",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_w_d_h_a_n_1_1_core_1_1_page.html#a292f66b0e00db3129dd8db67c6235599",tooltip="Parses a given page into a JObject"];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="WDHAN.Core.IO.GetCollections",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_w_d_h_a_n_1_1_core_1_1_i_o.html#aa5aa812e7154ab4029e740398281fb3c",tooltip="Create a JObject to merge with the Global context containing each collection's collection...."];
+  Node2 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="WDHAN.Core.Page.GetDayOfYear",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_w_d_h_a_n_1_1_core_1_1_page.html#a71fd3eb566879f207c321554cc1ecfa2",tooltip=" "];
+  Node2 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="WDHAN.Core.IO.GetGlobal",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_w_d_h_a_n_1_1_core_1_1_i_o.html#aac4d4c4e08c3c1ae7b38103e230460fa",tooltip="Get file representing project's Global context"];
+  Node5 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="WDHAN.Core.IO.GetYamlObject",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_w_d_h_a_n_1_1_core_1_1_i_o.html#ae601581880f278d00414777200cb917f",tooltip="Convert YAML data into JObject"];
+  Node2 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="WDHAN.Core.Page.GetPermalink",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_w_d_h_a_n_1_1_core_1_1_page.html#af7df462e29be7bdd0dec6b76539b3409",tooltip="Parses the permalink using given metadata to generate an output path"];
+  Node7 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="WDHAN.Core.IO.GetWDHAN",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_w_d_h_a_n_1_1_core_1_1_i_o.html#a3805887ffbfbacd0de9fb34bd24f3c3b",tooltip="Get JObject representing project's WDHAN context"];
+  Node2 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="WDHAN.Core.IO.RenderPage",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_w_d_h_a_n_1_1_core_1_1_i_o.html#ab3eed26626103b9aa4c6b3e1bd170daf",tooltip="Take layout, place Markdig-parsed content in layout, evaluate includes, render with Scriban"];
+  Node9 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="WDHAN.Core.IO.AppendEntry",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_w_d_h_a_n_1_1_core_1_1_i_o.html#ab64609fd1584bedbe3a3d87964eae1e3",tooltip="Adds JObject representations of pages in a collection to the collection's entries field in its collec..."];
+  Node9 -> Node11 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="WDHAN.Core.IO.ConvertFromJson",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_w_d_h_a_n_1_1_core_1_1_i_o.html#a226ff4d23ac00fed992ab5d2e85fdab7",tooltip="Convert JObject to Scriban objects"];
+  Node9 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 -> Node12 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="WDHAN.Core.Snippet.Parse",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_w_d_h_a_n_1_1_core_1_1_snippet.html#ade414a9921aa39851fd7a1c6b51496e0",tooltip="Parses through each {! snippet !} call in a page and evaluates them"];
+  Node12 -> Node13 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="WDHAN.Core.Snippet.GetArguments",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_w_d_h_a_n_1_1_core_1_1_snippet.html#a1063ffddc98a6bc4b74a7afe81a354f4",tooltip="Gets the arguments given in the Snippet call, to be parsed through later"];
+  Node12 -> Node14 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 [label="WDHAN.Core.Snippet.GetKeys",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_w_d_h_a_n_1_1_core_1_1_snippet.html#a45566b5b6408a2f5aabd680569f8a542",tooltip="Gets the keys (names of variables) given when the Snippet was called"];
+  Node12 -> Node15 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node15 [label="WDHAN.Core.Snippet.GetValues",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_w_d_h_a_n_1_1_core_1_1_snippet.html#a09c3f3cea15d8ab80f694e60db060ac9",tooltip="Gets values of given arguments/variables when the Snippet was called"];
+  Node12 -> Node16 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node16 [label="WDHAN.Core.Snippet.Render",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_w_d_h_a_n_1_1_core_1_1_snippet.html#a7e0224d917f9b89fbf1dd86b0ff751af",tooltip="Renders Snippets"];
+  Node16 -> Node11 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node16 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node16 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node16 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node16 -> Node12 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 -> Node17 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node17 [label="WDHAN.Core.Page.SplitFrontmatter",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_w_d_h_a_n_1_1_core_1_1_page.html#ad29b5db3fd83f70d5756e3dc3b7c67e1",tooltip="Gets the YAML of the frontmatter for a given page"];
+  Node1 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node17 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

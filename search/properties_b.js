@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['variables_222',['Variables',['../class_pigmeat_1_1_core_1_1_snippet.html#a66010995ab03ad7e67083a5c54998b87',1,'Pigmeat::Core::Snippet']]]
+  ['variables_222',['Variables',['../class_w_d_h_a_n_1_1_core_1_1_snippet.html#ae569008ea2c037f29b6fb4128d204019',1,'WDHAN::Core::Snippet']]]
 ];

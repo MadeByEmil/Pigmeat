@@ -1,0 +1,12 @@
+digraph "WDHAN.Core.IO.GetLayoutContents"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="WDHAN.Core.IO.GetLayoutContents",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Get the contents of Layouts recursively"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="WDHAN.Core.IO.GetYamlObject",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_w_d_h_a_n_1_1_core_1_1_i_o.html#ae601581880f278d00414777200cb917f",tooltip="Convert YAML data into JObject"];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="WDHAN.Core.Page.SplitFrontmatter",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_w_d_h_a_n_1_1_core_1_1_page.html#ad29b5db3fd83f70d5756e3dc3b7c67e1",tooltip="Gets the YAML of the frontmatter for a given page"];
+}

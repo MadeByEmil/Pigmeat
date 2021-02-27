@@ -4,5 +4,5 @@ digraph "Graphical Class Hierarchy"
   edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
   node [fontname="Helvetica",fontsize="10",shape=record];
   rankdir="LR";
-  Node0 [label="Pigmeat.Core.IO",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pigmeat_1_1_core_1_1_i_o.html",tooltip="The IO class. Contains all methods related to handling Pigmeat's build process."];
+  Node0 [label="WDHAN.Core.IO",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_w_d_h_a_n_1_1_core_1_1_i_o.html",tooltip="The IO class. Contains all methods related to handling WDHAN's build process."];
 }

@@ -1,5 +1,5 @@
 var namespaces_dup =
 [
     [ "dotnet3", "namespacedotnet3.html", null ],
-    [ "Pigmeat", "namespace_pigmeat.html", "namespace_pigmeat" ]
+    [ "WDHAN", "namespace_w_d_h_a_n.html", "namespace_w_d_h_a_n" ]
 ];
